@@ -35,8 +35,7 @@ public class Player : MonoBehaviour
         minBounds = mainCamera.ViewportToWorldPoint(new Vector2(0, 0));
         maxBounds = mainCamera.ViewportToWorldPoint(new Vector2(1, 1));
     }
-
-
+    
     void Move()
     {
         Vector2 delta = rawInput * moveSpeed * Time.deltaTime;
