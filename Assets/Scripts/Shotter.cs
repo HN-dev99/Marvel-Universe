@@ -21,8 +21,7 @@ public class Shooter : MonoBehaviour
     Coroutine firingCoroutine;
     AudioPlayer audioPlayer;
     [SerializeField] bool isBossEnemy;
-
-
+    
     void Awake()
     {
         audioPlayer = FindObjectOfType<AudioPlayer>();
@@ -35,8 +34,7 @@ public class Shooter : MonoBehaviour
             isFiring = true;
         }
     }
-
-
+    
     void Update()
     {
         Fire();
